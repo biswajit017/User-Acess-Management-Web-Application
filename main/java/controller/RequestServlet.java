@@ -21,7 +21,7 @@ public class RequestServlet extends HttpServlet {
         }
 
         List<Map<String, Object>> softwareList = new ArrayList<>();
-        try (Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@MSI:1521:orcl", "system", "Bhagyajyoti768")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@MSI:1521:orcl", "system", "kunu9090")) {
             String query = "SELECT s.id, s.name, s.description, COALESCE(r.status, 'No Request') AS accessStatus " +
                            "FROM software s LEFT JOIN requests r ON s.id = r.software_id AND r.user_email = ?";
             PreparedStatement stmt = conn.prepareStatement(query);
