@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
         try {
             final String URL = "jdbc:oracle:thin:@MSI:1521:orcl";
             final String USERNAME = "system";
-            final String PASSWORD = "Bhagyajyoti768";
+            final String PASSWORD = "kunu9090";
             Class.forName("oracle.jdbc.driver.OracleDriver");
             
             con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
