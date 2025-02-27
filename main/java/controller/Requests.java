@@ -18,7 +18,7 @@ public class Requests extends HttpServlet {
 
     private final String URL = "jdbc:oracle:thin:@MSI:1521:orcl";
     private final String USERNAME = "system";
-    private final String PASSWORD = "Bhagyajyoti768";
+    private final String PASSWORD = "kunu9090";
     
     
     // Handles GET requests to display pending requests
@@ -27,7 +27,7 @@ public class Requests extends HttpServlet {
         
         final String URL = "jdbc:oracle:thin:@MSI:1521:orcl";
         final String USERNAME = "system";
-        final String PASSWORD = "Bhagyajyoti768";
+        final String PASSWORD = "kunu9090";
         
         try (Connection conn = DriverManager.getConnection(URL, USERNAME, PASSWORD)) {
             Class.forName("oracle.jdbc.driver.OracleDriver");
